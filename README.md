@@ -12,7 +12,7 @@ Plug 'dimitrios-git/vim-theme-default-16'
 call plug#end()
 ```
 
-Then install with `:PlugInstall`.
+Then install with `:PlugInstall` and enable with `:colo default-16`.
 
 ### Using [Vundle](https://github.com/VundleVim/vundle):
 
@@ -32,6 +32,8 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 ```
+
+Then install with `:PluginInstall` and enable with `:colo default-16`.
 
 ### Manual Installation
 Alternatively, copy the `vim-theme-default-16.vim` file in to your
