@@ -4,16 +4,24 @@
 " This theme replicates the default vim theme, using the 16-color palette of
 " the terminal.
 
-" color   id
-" black    0
-" red      1
-" green    2
-" yellow   3
-" blue     4
-" magenta  5
-" cyan     6
-" white    7
-
+" color            id
+" black             0
+" red               1
+" green             2
+" yellow            3
+" blue              4
+" magenta           5
+" cyan              6
+" white             7
+" bright black      8
+" bright red        9
+" bright green     10
+" bright yellow    11
+" bright blue      12
+" bright magenta   13
+" bright cyan      14
+" bright white     15
+"
 set background=dark
 
 hi clear
