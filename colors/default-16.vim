@@ -1,27 +1,27 @@
 " Vim color file
 " Maintainer: Dimitrios Charalampidis <dimitrios@charalampidis.pro>
-" 
-" This theme replicates the default vim theme, using the 16-color palette of
-" the terminal.
-
-" color            id
-" black             0
-" red               1
-" green             2
-" yellow            3
-" blue              4
-" magenta           5
-" cyan              6
-" white             7
-" bright black      8
-" bright red        9
-" bright green     10
-" bright yellow    11
-" bright blue      12
-" bright magenta   13
-" bright cyan      14
-" bright white     15
 "
+" This is a template and you must change the below colors to match your terminal
+" colors.
+
+" color   id
+" paletteEntry0  0
+" paletteEntry1  1
+" paletteEntry2  2
+" paletteEntry3  3
+" paletteEntry4  4
+" paletteEntry5  5
+" paletteEntry6  6
+" paletteEntry7  7
+" paletteEntry8  8
+" paletteEntry9  9
+" paletteEntry10 10
+" paletteEntry11 11
+" paletteEntry12 12
+" paletteEntry13 13
+" paletteEntry14 14
+" paletteEntry15 15
+
 set background=dark
 
 hi clear
@@ -31,69 +31,56 @@ endif
 
 let colors_name = "default-16"
 
-hi ColorColumn   ctermfg=7   ctermbg=1
-hi Conceal       ctermfg=7   ctermbg=0
+hi SpecialKey     term=bold ctermfg=4 guifg=paletteEntry4
+hi NonText        term=bold cterm=bold ctermfg=4 gui=bold guifg=paletteEntry4
+hi Directory      term=bold ctermfg=4 guifg=paletteEntry4
+hi ErrorMsg       term=standout cterm=bold ctermfg=7 ctermbg=1 guifg=paletteEntry7 guibg=paletteEntry1
+hi IncSearch      term=reverse cterm=reverse gui=reverse
+hi Search         term=reverse ctermfg=0 ctermbg=3 guibg=paletteEntry3
+hi MoreMsg        term=bold ctermfg=2 gui=bold guifg=paletteEntry2
+hi ModeMsg        term=bold cterm=bold gui=bold
+hi LineNr         term=underline ctermfg=3 guifg=paletteEntry3
+hi CursorLineNr   term=bold ctermfg=3 gui=bold guifg=paletteEntry3
+hi Question       term=standout ctermfg=2 gui=bold guifg=paletteEntry2
+hi StatusLine     term=bold,reverse cterm=bold,reverse gui=bold,reverse
+hi StatusLineNC   term=reverse cterm=reverse gui=reverse
+hi VertSplit      term=reverse cterm=reverse gui=reverse
+hi Title          term=bold ctermfg=5 gui=bold guifg=paletteEntry5
+hi Visual         term=reverse cterm=reverse guibg=paletteEntry7
+hi WarningMsg     term=standout ctermfg=1 guifg=paletteEntry1
+hi WildMenu       term=standout ctermfg=0 ctermbg=3 guifg=paletteEntry0 guibg=paletteEntry3
+hi Folded         term=standout ctermfg=4 ctermbg=7 guifg=paletteEntry4 guibg=paletteEntry7
+hi FoldColumn     term=standout ctermfg=4 ctermbg=7 guifg=paletteEntry4 guibg=paletteEntry7
+hi DiffAdd        term=bold ctermbg=4 guibg=paletteEntry4
+hi DiffChange     term=bold ctermbg=5 guibg=LightpaletteEntry5
+hi DiffDelete     term=bold cterm=bold ctermfg=4 ctermbg=6 gui=bold guifg=paletteEntry4 guibg=paletteEntry6
+hi DiffText       term=reverse cterm=bold ctermbg=1 gui=bold guibg=paletteEntry1
+hi SignColumn     term=standout ctermfg=4 ctermbg=7 guifg=paletteEntry4 guibg=paletteEntry7
+hi Conceal        ctermfg=7 ctermbg=0 guifg=paletteEntry7 guibg=paletteEntry7
+hi SpellBad       term=reverse ctermbg=1 gui=undercurl guisp=paletteEntry1
+hi SpellCap       term=reverse ctermbg=4 gui=undercurl guisp=paletteEntry4
+hi SpellRare      term=reverse ctermbg=5 gui=undercurl guisp=paletteEntry5
+hi SpellLocal     term=underline ctermbg=6 gui=undercurl guisp=paletteEntry6
+hi Pmenu          ctermfg=0 ctermbg=5 guibg=LightpaletteEntry5
+hi PmenuSel       ctermfg=0 ctermbg=7 guibg=paletteEntry7
+hi PmenuSbar      ctermbg=7 guibg=paletteEntry7
+hi PmenuThumb     ctermbg=0 guibg=paletteEntry0
+hi TabLine        term=underline cterm=underline ctermfg=0 ctermbg=7 gui=underline guibg=paletteEntry7
+hi TabLineSel     term=bold cterm=bold gui=bold
+hi TabLineFill    term=reverse cterm=reverse gui=reverse
+hi CursorColumn   term=reverse ctermbg=7 guibg=paletteEntry7
+hi CursorLine     term=underline cterm=underline guibg=paletteEntry7
+hi ColorColumn    term=reverse ctermbg=1 guibg=paletteEntry1
+hi MatchParen     term=reverse ctermbg=6 guibg=paletteEntry6
+hi Comment        term=bold ctermfg=4 guifg=paletteEntry4
+hi Constant       term=underline ctermfg=1 guifg=paletteEntry5
+hi Special        term=bold ctermfg=5 guifg=paletteEntry5
+hi Identifier     term=underline ctermfg=6 guifg=paletteEntry6
+hi Statement      term=bold ctermfg=3 gui=bold guifg=paletteEntry3
+hi PreProc        term=underline ctermfg=5 guifg=paletteEntry5
+hi Type           term=underline ctermfg=2 gui=bold guifg=paletteEntry2
+hi Underlined     term=underline cterm=underline ctermfg=5 gui=underline guifg=paletteEntry5
+hi Ignore         cterm=bold ctermfg=7 guifg=bg
+hi Error          term=reverse cterm=bold ctermfg=7 ctermbg=1 guifg=paletteEntry7 guibg=paletteEntry1
+hi Todo           term=standout ctermfg=0 ctermbg=3 guifg=paletteEntry4 guibg=paletteEntry3
 
-hi EndOfBuffer   ctermfg=4   ctermbg=0
-
-hi CursorColumn  ctermfg=6   ctermbg=0
-hi CursorLine    ctermfg=6   ctermbg=0     cterm=underline
-hi Directory     ctermfg=14
-hi DiffAdd       ctermfg=7   ctermbg=4
-hi DiffChange    ctermfg=7   ctermbg=5
-hi DiffDelete    ctermfg=12  ctermbg=6
-hi DiffText      ctermfg=15  ctermbg=1     cterm=bold
-
-hi ErrorMsg      ctermfg=15   ctermbg=1
-hi VertSplit     ctermfg=0    ctermbg=7    cterm=NONE
-hi Folded        ctermfg=14   ctermbg=0
-hi FoldColumn    ctermfg=14   ctermbg=0
-hi SignColumn    ctermfg=14   ctermbg=0
-hi IncSearch                               cterm=reverse
-hi LineNr        ctermfg=11
-
-hi CursorLineNr  ctermfg=14
-
-hi MatchParen                 ctermbg=6
-hi ModeMsg       ctermfg=15                cterm=bold
-hi MoreMsg       ctermfg=10
-hi NonText       ctermfg=12
-hi Pmenu         ctermfg=0    ctermbg=13
-hi PmenuSel      ctermfg=8    ctermbg=0
-hi PmenuSbar                  ctermbg=7
-hi PmenuThumb                 ctermbg=7
-hi Question      ctermfg=10
-
-hi Search        ctermfg=0    ctermbg=3
-
-hi SpecialKey    ctermfg=12
-hi SpellBad                   ctermbg=1
-hi SpellCap      ctermfg=7    ctermbg=4
-hi SpellLocal                 ctermbg=6
-hi SpellRare                  ctermbg=5
-hi StatusLine    ctermfg=8    ctermbg=7    cterm=bold
-hi StatusLineNC  ctermfg=0    ctermbg=7    cterm=NONE
-
-hi TabLine       ctermfg=14   ctermbg=0    cterm=underline
-hi TabLineFill                             cterm=reverse
-hi TabLineSel    ctermfg=15                cterm=bold
-
-hi Title         ctermfg=13
-
-hi clear Visual
-hi Visual        ctermfg=NONE ctermbg=NONE cterm=inverse
-
-hi WarningMsg    ctermfg=9
-hi WildMenu      ctermfg=0    ctermbg=3
-
-hi Comment       ctermfg=14
-hi Constant      ctermfg=13
-hi Identifier    ctermfg=14                cterm=NONE
-hi Statement     ctermfg=11
-hi PreProc       ctermfg=12
-hi Type          ctermfg=10
-hi Special       ctermfg=9
-hi Underlined    ctermfg=14                cterm=underline
-hi Ignore        ctermfg=7
-hi Error         ctermfg=15   ctermbg=1
-hi Todo          ctermfg=0    ctermbg=3
