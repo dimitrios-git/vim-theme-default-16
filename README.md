@@ -1,18 +1,20 @@
 # vim-theme-default-16
 This theme replicates the default vim theme, using the 16-color palette.
 
-The original theme uses constants to define colors, e.g.:Blue, Red, Green,
-Brown, LightBlue, LightRed, LightGreen, DarkBlue, DarkRed, DarkGreen, etc.
+The original theme uses constants to define colors, e.g.:Blue, Red, Green, Brown, LightBlue, LightRed, LightGreen, DarkBlue, DarkRed, DarkGreen, etc.
 
-Terminal emoulators might interpret these differently, based on how many
-colors they can represent. This theme ensures only 16 colors are shown.
+Terminal emoulators might interpret these differently, based on how many colors they can represent. This theme ensures only 16 colors are shown.
 
 > [!IMPORTANT]
 > This is a template and you must change the below colors to match your terminal
 > colors.
 
 ## Installation
-Copy the `default-16.vim` file in your `~/.vim/colors/` directory.
+Copy the `default-16.vim.template` file in your `~/.vim/colors/` directory and rename it to `default-16.vim`.
+
+```sh
+cp default-16.vim.template ~/.vim/colors/default-16.vim
+```
 
 ### Adjusting the colors
 You must adjust the colors to match your terminal colors.
