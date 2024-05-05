@@ -68,10 +68,12 @@ hi PmenuThumb     ctermbg=0 guibg=#000000
 hi TabLine        term=underline cterm=underline ctermfg=0 ctermbg=7 gui=underline guibg=#7c7c7c
 hi TabLineSel     term=bold cterm=bold gui=bold
 hi TabLineFill    term=reverse cterm=reverse gui=reverse
+" The default vim theme uses color 7 instead of 8 for CursonColumn.
 hi CursorColumn   term=reverse ctermbg=8 guibg=#404040
 hi CursorLine     term=underline cterm=underline guibg=#7c7c7c
 hi ColorColumn    term=reverse ctermbg=1 guibg=#f90000
-hi MatchParen     term=reverse ctermbg=6 guibg=#008a8a
+" The default vim theme uses color 6 instead of 8 for MatchParen.
+hi MatchParen     term=reverse ctermbg=8 guibg=#404040
 hi Comment        term=bold ctermfg=4 guifg=#6868ff
 hi Constant       term=underline ctermfg=1 guifg=#db00db
 hi Special        term=bold ctermfg=5 guifg=#db00db
